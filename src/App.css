@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* Limit the width of the app */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+.textbox-container {
+  position: relative; /* Set relative positioning for the container */
+  display: flex;
+  align-items: center; /* Vertically center-align the textarea */
+  justify-content: center; /* Center the textarea horizontally */
+  margin-bottom: 20px; /* Add spacing between the text container and the button */
+  width: 100%;
+  max-width: 400px; /* Limit the width of the container */
+  background-color: #222; /* Optional: Add a background color */
+  border-radius: 20px; /* Rounded corners for the container */
+  padding: 10px; /* Add padding inside the container */
+}
+
+.expandable-textarea {
+  flex: 1; /* Allow the textarea to take up available space */
+  min-height: 40px; /* Smaller initial height */
+  padding: 10px;
+  font-size: 16px;
+  border: none; /* Remove border for seamless design */
+  border-radius: 20px; /* Rounded corners */
+  resize: none; /* Disable manual resizing */
+  transition: all 0.3s ease; /* Smooth transition for expansion */
+  overflow: hidden; /* Prevent scrollbars */
+  background-color: transparent; /* Match container background */
+  color: white; /* Text color */
+}
+
+.expandable-textarea:focus {
+  outline: none; /* Remove default outline on focus */
+  min-height: 100px; /* Expand height on focus */
+}
+
+.submit-button {
+  display: block; /* Make the button a block element */
+  width: 50%; /* Match the width of the text container */
+  max-width: 400px; /* Limit the width of the button */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px;
+  color: white;
+  background-color: #363636;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.submit-button:hover {
+  background-color: #1b1b1b;
+  color: white;
+  border: none;
+}

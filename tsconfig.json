@@ -1,27 +1,18 @@
 {
-  "include": [
-    "**/*",
-    "**/.server/**/*",
-    "**/.client/**/*",
-    ".react-router/types/**/*"
-  ],
   "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable", "ES2022"],
-    "types": ["node", "vite/client"],
-    "target": "ES2022",
-    "module": "ES2022",
-    "moduleResolution": "bundler",
-    "jsx": "react-jsx",
-    "rootDirs": [".", "./.react-router/types"],
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./app/*"]
-    },
-    "esModuleInterop": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true
-  }
+    "target": "ES6",                          // Specify ECMAScript target version
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include DOM and modern JavaScript features
+    "allowJs": true,                          // Allow JavaScript files to be compiled
+    "checkJs": false,                         // Disable type checking for JavaScript files
+    "jsx": "react-jsx",                       // Use React JSX transform
+    "strict": true,                           // Enable all strict type-checking options
+    "noImplicitAny": false,                   // Allow implicit 'any' types
+    "module": "ESNext",                       // Use ESNext module system
+    "moduleResolution": "Node",              // Resolve modules like Node.js
+    "esModuleInterop": true,                 // Enable interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                    // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensure consistent casing in file names
+  },
+  "include": ["src"],                         // Include all files in the 'src' directory
+  "exclude": ["node_modules", "build"]        // Exclude 'node_modules' and build output
 }
