@@ -25,8 +25,8 @@ body {
   align-items: center; /* Vertically center-align the textarea */
   justify-content: center; /* Center the textarea horizontally */
   margin-bottom: 20px; /* Add spacing between the text container and the button */
-  width: 100%;
-  max-width: 400px; /* Limit the width of the container */
+  width: 400%;
+  max-width: 800px; /* Limit the width of the container */
   background-color: #222; /* Optional: Add a background color */
   border-radius: 20px; /* Rounded corners for the container */
   padding: 10px; /* Add padding inside the container */
